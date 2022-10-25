@@ -23,7 +23,8 @@ class PatientRepository
     CSV.open(@csv_file, 'w') do |csv|
       csv << %w[id name cured age room_id]
       @patients.each do |patient|
-        csv << [patient.id, patient.name, patient.cured, patient.age, patient.room.id]
+        room_id = patient.room ? patient.room.id : nil
+        csv << [patient.id, patient.name, patient.cured, patient.age, room_id]
       end
     end
   end
