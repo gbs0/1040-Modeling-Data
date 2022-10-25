@@ -1,0 +1,8 @@
+id,name,cured,age,room_id
+1,Bob,false,32,1
+2,Anna,false,32,1
+3,Bob,false,24,2
+4,Bob,false,32,1
+5,Anna,false,32,1
+6,Bob,false,32,1
+7,Anna,false,32,1
